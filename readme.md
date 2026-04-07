@@ -38,7 +38,7 @@ Bronze → Silver → Gold
 ```
 ---
 
-## Tech Stack
+## Technologies Used
 - Azure Data Lake Gen2 (ADLS)  
 - Azure Databricks (PySpark)  
 - Delta Lake (ACID tables)  
