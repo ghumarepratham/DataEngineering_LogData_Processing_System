@@ -27,7 +27,7 @@ This project builds an end-to-end data pipeline to process application-like log 
 ```
 
 
-Medallion Architecture:  
+## Medallion Architecture:  
 ```
 Bronze → Silver → Gold
 
@@ -35,7 +35,7 @@ Bronze → Silver → Gold
 - Silver: Data cleaning, transformation, and error detection  
 - Gold: Aggregated insights (error rates, user activity)  
 ```
----
+
 
 ## Technologies Used
 ```
@@ -46,9 +46,10 @@ Bronze → Silver → Gold
 - Unity Catalog  
 - Power BI  
 ```
----
+
 
 ## Pipeline Flow
+```
 1. Fetch data from REST APIs (posts & comments)  
 2. Store raw data in ADLS (Bronze layer)  
 3. Load data into Delta tables in Databricks  
@@ -56,19 +57,20 @@ Bronze → Silver → Gold
 5. Apply rule-based logic to detect errors from text  
 6. Create aggregated Gold tables  
 7. Visualize insights in Power BI  
+```
 
----
 
 ## Automation & API Polling
+```
 - ADF pipeline runs on schedule (API polling)  
 - Data stored in timestamp-based   
 - Incremental load handled using deduplication  
 - Databricks notebooks triggered automatically  
-
----
+```
 
 
 ## Key Concepts Implemented
+```
 - Medallion Architecture  
 - API Polling  
 - Incremental Load    
@@ -76,19 +78,21 @@ Bronze → Silver → Gold
 - Rule-based Error Detection  
 - Managed & External Tables  
 - Unity Catalog  
-
----
+```
 
 ## Output 
+```
 - Error Rate Analysis  
 - User Activity Tracking  
 - Store structured data in Lakehouse
 - Created aggregated tables   
+```
 
----
 
 ## Highlights
+```
 ✔ End-to-end pipeline  
 ✔ Automated workflows  
 ✔ Scalable design  
 ✔ Real-world data engineering concepts   
+```
