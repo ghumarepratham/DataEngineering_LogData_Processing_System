@@ -6,13 +6,36 @@ This project builds an end-to-end data pipeline to process application-like log 
 ---
 
 ## Architecture
+```
+                            Source  
+                             ↓
+                            ADF 
+                             ↓ 
+                            ADLS
+                             ↓ 
+                            Databricks 
+                             ↓ 
+                            Bronze 
+                             ↓ 
+                            Silver
+                             ↓ 
+                            Gold
+                             ↓ 
+                            ADLS
+                             ↓
+                            Power BI   
+```
+
+---
+
 Medallion Architecture:  
-**Bronze → Silver → Gold**
+```
+Bronze → Silver → Gold
 
-- **Bronze**: Raw API data ingestion (posts & comments)  
-- **Silver**: Data cleaning, transformation, and error detection  
-- **Gold**: Aggregated insights (error rates, user activity)  
-
+- Bronze: Raw API data ingestion (posts & comments)  
+- Silver: Data cleaning, transformation, and error detection  
+- Gold: Aggregated insights (error rates, user activity)  
+```
 ---
 
 ## Tech Stack
@@ -38,7 +61,7 @@ Medallion Architecture:
 
 ## Automation & API Polling
 - ADF pipeline runs on schedule (API polling)  
-- Data stored in timestamp-based folders  
+- Data stored in timestamp-based   
 - Incremental load handled using deduplication  
 - Databricks notebooks triggered automatically  
 
@@ -56,7 +79,7 @@ Medallion Architecture:
 
 ---
 
-## Output (Business Insights)
+## Output 
 - Error Rate Analysis  
 - User Activity Tracking  
 - Store structured data in Lakehouse
@@ -68,5 +91,4 @@ Medallion Architecture:
 ✔ End-to-end pipeline  
 ✔ Automated workflows  
 ✔ Scalable design  
-✔ Real-world data engineering concepts  
-✔ Interview-ready project  
+✔ Real-world data engineering concepts   
