@@ -1,11 +1,11 @@
-# 📊 Log Data Processing System – Data Engineering Project
+# Log Data Processing System – Data Engineering Project
 
-## 🚀 Overview
+## Overview
 This project builds an end-to-end data pipeline to process application-like log data using APIs. It converts raw semi-structured JSON data into structured insights such as error rates and user activity. The pipeline follows industry-standard practices like Medallion Architecture, incremental processing, and automated workflows and API Polling.
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 Medallion Architecture:  
 **Bronze → Silver → Gold**
 
@@ -15,7 +15,7 @@ Medallion Architecture:
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 - Azure Data Lake Gen2 (ADLS)  
 - Azure Databricks (PySpark)  
 - Delta Lake (ACID tables)  
@@ -25,7 +25,7 @@ Medallion Architecture:
 
 ---
 
-## 🔄 Pipeline Flow
+## Pipeline Flow
 1. Fetch data from REST APIs (posts & comments)  
 2. Store raw data in ADLS (Bronze layer)  
 3. Load data into Delta tables in Databricks  
@@ -36,7 +36,7 @@ Medallion Architecture:
 
 ---
 
-## 🔁 Automation & API Polling
+## Automation & API Polling
 - ADF pipeline runs on schedule (API polling)  
 - Data stored in timestamp-based folders  
 - Incremental load handled using deduplication  
@@ -45,7 +45,7 @@ Medallion Architecture:
 ---
 
 
-## 🧠 Key Concepts Implemented
+## Key Concepts Implemented
 - Medallion Architecture  
 - API Polling  
 - Incremental Load    
@@ -56,7 +56,7 @@ Medallion Architecture:
 
 ---
 
-## 📈 Output (Business Insights)
+## Output (Business Insights)
 - Error Rate Analysis  
 - User Activity Tracking  
 - Store structured data in Lakehouse
@@ -64,7 +64,7 @@ Medallion Architecture:
 
 ---
 
-## 💡 Highlights
+## Highlights
 ✔ End-to-end pipeline  
 ✔ Automated workflows  
 ✔ Scalable design  
