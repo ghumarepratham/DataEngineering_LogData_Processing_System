@@ -26,7 +26,6 @@ This project builds an end-to-end data pipeline to process application-like log 
                             Power BI   
 ```
 
----
 
 Medallion Architecture:  
 ```
@@ -39,13 +38,14 @@ Bronze → Silver → Gold
 ---
 
 ## Technologies Used
+```
 - Azure Data Lake Gen2 (ADLS)  
 - Azure Databricks (PySpark)  
 - Delta Lake (ACID tables)  
 - Azure Data Factory (ADF – pipelines & Scheduled triggers)  
 - Unity Catalog  
 - Power BI  
-
+```
 ---
 
 ## Pipeline Flow
