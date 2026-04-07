@@ -64,8 +64,8 @@ Bronze → Silver → Gold
 ```
 - ADF pipeline runs on schedule (API polling)  
 - Data stored in timestamp-based   
-- Incremental load handled using deduplication  
-- Databricks notebooks triggered automatically  
+- Incremental load handled  
+- Databricks notebooks triggered automatically by ADF 
 ```
 
 
